@@ -1,10 +1,5 @@
 class User < ApplicationRecord
-  # Include default devise modules. Others available are:
-  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable
-
-  enum role: { visitor: 0, admin: 10 }
+  include WithAuthentication
 
   def to_s
     full_name.blank? ? email : full_name
