@@ -2,6 +2,8 @@
 
 Rails application & OAuth / OpenID Connect provider
 
+![h0dor](https://user-images.githubusercontent.com/7761386/167663966-86f3245c-37c2-4925-9738-280147f0e7ce.jpeg)
+
 ## Setup
 
 ### Basic
