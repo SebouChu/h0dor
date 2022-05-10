@@ -30,6 +30,8 @@ module H0dor
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+    config.force_ssl = true
+
     config.to_prepare do
       Doorkeeper::ApplicationsController.layout "application"
       Doorkeeper::AuthorizationsController.layout "application"

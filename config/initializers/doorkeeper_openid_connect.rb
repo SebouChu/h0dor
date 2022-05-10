@@ -2,7 +2,7 @@
 
 Doorkeeper::OpenidConnect.configure do
   issuer do |resource_owner, application|
-    "https://localhost:3000"
+    "https://h0dor.localhost"
   end
 
   signing_key File.read(Rails.root.join("config/oidc_private.pem"))
@@ -48,9 +48,9 @@ Doorkeeper::OpenidConnect.configure do
 
   # Protocol to use when generating URIs for the discovery endpoint,
   # for example if you also use HTTPS in development
-  protocol do
-    :https
-  end
+  # protocol do
+  #   :https
+  # end
 
   # Expiration time on or after which the ID Token MUST NOT be accepted for processing. (default 120 seconds).
   # expiration 600
