@@ -69,8 +69,8 @@ Doorkeeper::OpenidConnect.configure do
       resource_owner.last_name
     end
 
-    claim :full_name do |resource_owner|
-      "#{resource_owner.first_name} #{resource_owner.last_name}"
+    claim :name do |resource_owner|
+      resource_owner.full_name
     end
 
     claim :role do |resource_owner|
