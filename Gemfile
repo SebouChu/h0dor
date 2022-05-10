@@ -7,6 +7,7 @@ gem "bootsnap", require: false
 gem "cssbundling-rails"
 gem "devise", "~> 4.8"
 gem "doorkeeper", "~> 5.5"
+gem "doorkeeper-openid_connect", "~> 1.8"
 gem "jsbundling-rails"
 gem "pg", "~> 1.1"
 gem "puma", "~> 5.0"
