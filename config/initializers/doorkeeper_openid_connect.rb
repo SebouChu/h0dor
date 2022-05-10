@@ -2,10 +2,10 @@
 
 Doorkeeper::OpenidConnect.configure do
   issuer do |resource_owner, application|
-    "https://h0dor.localhost"
+    ENV["APPLICATION_URL"]
   end
 
-  signing_key File.read(Rails.root.join("config/oidc_private.pem"))
+  signing_key ENV["OPENID_PRIVATE_KEY"]
 
   subject_types_supported [:public]
 
